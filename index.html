@@ -35,6 +35,15 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      border: 3px solid rgba(255, 255, 255, 0.4);
+    }
     h1 {
       font-size: 28px;
       margin-bottom: 25px;
@@ -64,6 +73,25 @@
     .instagram {
       background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF);
     }
+    .mini-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(45deg, #25D366, #128C7E);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 500;
+      gap: 6px;
+      margin-top: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .mini-whatsapp:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
     .icon {
       font-size: 22px;
     }
@@ -71,11 +99,20 @@
       margin-top: 20px;
       font-size: 14px;
       opacity: 0.8;
+      line-height: 1.5;
+    }
+    footer span {
+      display: block;
+      font-size: 13px;
+      color: rgba(255,255,255,0.8);
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Substitua o link abaixo pela sua logo -->
+    <img src="Logo.jpeg" alt="Logo N.N Climatização" class="logo">
+    
     <h1>Entre em contato 💬</h1>
     <a href="https://wa.me/5518936187188" target="_blank" class="btn whatsapp">
       <i class="icon lucide lucide-message-circle"></i> WhatsApp
@@ -83,7 +120,14 @@
     <a href="https://instagram.com/n.nclimatizacao" target="_blank" class="btn instagram">
       <i class="icon lucide lucide-camera"></i> Instagram
     </a>
-    <footer>© 2025 N.N CLIMATIZAÇÃO</footer>
+
+    <footer>
+      © 2025 N.N CLIMATIZAÇÃO  
+      <span>Desenvolvido por <strong>Cauã Lins</strong></span>
+      <a href="https://wa.me/5518997866640" target="_blank" class="mini-whatsapp">
+        <i class="lucide lucide-message-circle"></i> Falar com o Criador
+      </a>
+    </footer>
   </div>
 </body>
 </html>

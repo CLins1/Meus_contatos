@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Contatos</title>
+  <link href="https://unpkg.com/lucide-static/font/lucide.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #33c4dd, #0416b4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      width: 90%;
+      max-width: 400px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color: white;
+      padding: 15px;
+      border-radius: 12px;
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: 500;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+    .whatsapp {
+      background: linear-gradient(45deg, #25D366, #128C7E);
+    }
+    .instagram {
+      background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF);
+    }
+    .icon {
+      font-size: 22px;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Entre em contato 💬</h1>
+    <a href="https://wa.me/5518936187188" target="_blank" class="btn whatsapp">
+      <i class="icon lucide lucide-message-circle"></i> WhatsApp
+    </a>
+    <a href="https://instagram.com/n.nclimatizacao" target="_blank" class="btn instagram">
+      <i class="icon lucide lucide-camera"></i> Instagram
+    </a>
+    <footer>© 2025 N.N CLIMATIZAÇÃO</footer>
+  </div>
+</body>
+</html>
